@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.satori</groupId>
+    <artifactId>satori-framework</artifactId>
+    <version>1.0.0</version>
+    <packaging>pom</packaging>
+    <modules>
+        <module>satori-springboot-starter</module>
+        <module>satori-common</module>
+        <module>satori-model</module>
+        <module>satori-config</module>
+        <module>satori-redis-config</module>
+        <module>satori-dependencies</module>
+        <module>satori-parent</module>
+        <module>satori-sso</module>
+    </modules>
+
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <distributionManagement>
+        <repository>
+            <id>repo-jpmv</id>
+            <name>repo jp</name>
+            <url>https://packages.aliyun.com/6823f4de0bd1e62a78d92375/maven/repo-jpmv</url>
+        </repository>
+        <snapshotRepository>
+            <id>repo-jpmv</id>
+            <name>repo ky</name>
+            <url>https://packages.aliyun.com/6823f4de0bd1e62a78d92375/maven/repo-jpmv</url>
+        </snapshotRepository>
+    </distributionManagement>
+</project>
